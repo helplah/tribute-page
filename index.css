@@ -1,10 +1,6 @@
 body {
   background: linear-gradient(silver, cyan); }
 
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px; }
-
 .container {
   background-color: white;
   min-height: 100vh;
@@ -27,7 +23,7 @@ h2, h3 {
 .summary {
   font-family: 'Roboto', sans-serif; }
 
-/* style his photo */
+/* style Elon's photo */
 .img {
   display: block;
   margin-left: 6px;
@@ -73,6 +69,10 @@ li {
 .text {
   font-size: 16px;
   font-family: helvetica; }
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px; }
 
 footer > p {
   /* footer at the end of website */
@@ -132,7 +132,8 @@ div > hr {
     font-size: 15px; }
 
   .summary {
-    font-size: 17px; } }
+    font-size: 17px;
+    font-weight: 500; } }
 @media (max-width: 426px) {
   .first-row-padding--left--right {
     padding-left: 20px;
@@ -140,5 +141,17 @@ div > hr {
 
   .second-row-padding--left--right {
     padding-right: 16px; } }
+@media (max-width: 376px) {
+  h4 {
+    font-size: 1.3rem; }
+
+  h1 {
+    font-size: 40px; }
+
+  .second-row-padding--left--right .row {
+    padding-left: 30px; }
+
+  .timeline-margin--top--left {
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=index.css.map */
