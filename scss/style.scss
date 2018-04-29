@@ -1,21 +1,25 @@
+// default browser font-size is 16px, 62.5% of that is 10px; 1rem = 10px
+html {
+  font-size: 62.5%;
+}
+
 body {
     background: linear-gradient(silver, cyan);
 }
 
 .container {
     background-color: white;
-    min-height: 100vh;
     box-shadow: 0 0 10px #111;
 }
 
 header div > p {
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 /* style the name - Elon Musk */
 h1 {
     font-family: 'Poiret One', cursive;
-    font-size: 45px;
+    font-size: 4.5rem;
     margin-top: 0;
     margin-bottom: 11px;
 }
@@ -23,13 +27,14 @@ h1 {
 /* style Biography and Timeline */
 h2 {
     font-family: 'Poiret One', cursive;
-    font-size: 32px;
+    font-size: 3.2rem;
     margin-top: 16px;
     line-height: 50px;
 }
 
 .summary {
     font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
 }
 
 /* style Elon's photo */
@@ -55,8 +60,8 @@ blockquote p {
 
 /* footer for blockquote */
 #footer-quote {
-    margin-top: 0px;
-    margin-right: 58px;
+    margin: 0;
+    font-size: 1.6rem;
 }
 
 .timeline-margin--top--left {
@@ -79,26 +84,23 @@ blockquote p {
 }
 
 li {
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
     margin-bottom: 15px;
     padding: 0;
     list-style-type: none;
 }
 
-.text {
-    font-size: 16px;
-    font-family: helvetica;
-}
-
 p {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 footer > p { /* footer at the end of website */
     padding-bottom: 20px;
     margin-bottom: 0px;
     font-style: italic;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 div > hr {
@@ -114,11 +116,7 @@ ul > p {
     padding-left: 20px;
     padding-right: 10px;
     margin: 0 auto;
-    font-size: 22px;
-}
-
-.footer-p {
-  margin: 0 auto;
+    font-size: 2.2rem;
 }
 
 @media (max-width: 1200px) {
@@ -140,7 +138,8 @@ ul > p {
 }
 
 @media (max-width: 768px) {
-  .img { // style Elon Musk photo
+  // style Elon Musk photo
+  .img {
       margin: 0 auto;
       max-width: 50%;
   }
@@ -162,16 +161,12 @@ ul > p {
     margin: 10px -15px -1px;
   }
 
-  .text {
-    font-size: 15px;
+  html {
+    font-size: 60%;
   }
 
   .second-row-padding--left--right .row > p {
     padding: 0;
-  }
-
-  .find-out-more {
-    font-size: 18px;
   }
 }
 
@@ -185,11 +180,11 @@ ul > p {
   }
 
   .biography {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .summary {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 500;
   }
 
@@ -210,12 +205,8 @@ ul > p {
 }
 
 @media (max-width: 376px) {
-  h4 {
-    font-size: 1.3rem;
-  }
-
-  h1 {
-    font-size: 40px;
+  html {
+    font-size: 57%;
   }
 
   .second-row-padding--left--right .row {
@@ -226,7 +217,4 @@ ul > p {
     margin-left: 10px;
   }
 
-  .find-out-more {
-    font-size: 17px;
-  }
 }
