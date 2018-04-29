@@ -3,21 +3,25 @@ body {
 }
 
 .container {
-  background-color: white;
-  min-height: 100vh;
-  box-shadow: 0 0 10px #111;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 10px #111;
+}
+
+header div > p {
+    font-size: 22px;
 }
 
 /* style the name - Elon Musk */
 h1 {
-    font-size: 45px;
     font-family: 'Poiret One', cursive;
+    font-size: 45px;
     margin-top: 0;
     margin-bottom: 11px;
 }
 
 /* style Biography and Timeline */
-h2, h3 {
+h2 {
     font-family: 'Poiret One', cursive;
     font-size: 32px;
     margin-top: 16px;
@@ -25,7 +29,7 @@ h2, h3 {
 }
 
 .summary {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* style Elon's photo */
@@ -56,22 +60,22 @@ blockquote p {
 }
 
 .timeline-margin--top--left {
-  margin-top: 55px;
-  margin-left: 20px;
+    margin-top: 55px;
+    margin-left: 20px;
 }
 
 .first-row-padding--left--right {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .second-row-padding--left--right {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .footer-margin--top {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 li {
@@ -102,7 +106,19 @@ div > hr {
 }
 
 ul > p {
-  font-weight: 700;
+    font-weight: 700;
+}
+
+.find-out-more {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.footer-p {
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
@@ -126,7 +142,7 @@ ul > p {
 @media (max-width: 768px) {
   .img { // style Elon Musk photo
       margin: 0 auto;
-      max-width: 55%;
+      max-width: 50%;
   }
 
   .row ul > p {
@@ -150,8 +166,12 @@ ul > p {
     font-size: 15px;
   }
 
-  .row > p {
+  .second-row-padding--left--right .row > p {
     padding: 0;
+  }
+
+  .find-out-more {
+    font-size: 18px;
   }
 }
 
@@ -171,6 +191,10 @@ ul > p {
   .summary {
     font-size: 17px;
     font-weight: 500;
+  }
+
+  li {
+    margin-bottom: 18px;
   }
 }
 
@@ -200,5 +224,9 @@ ul > p {
 
   .timeline-margin--top--left {
     margin-left: 10px;
+  }
+
+  .find-out-more {
+    font-size: 17px;
   }
 }
